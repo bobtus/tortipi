@@ -50,10 +50,10 @@ service isc-dhcp-server stop
 service isc-dhcp-server start
 
 #Assigning the static IP to the wlan interface
-ip link set wlan0 down
+sudo ifconfig wlan0 down
 # Static IP configuration is stored in interfaces.config
 cat interfaces.config > /etc/networks/interfaces
-ip link set wlan0 up
+sudo ifconfig wlan0 up
 
 # copying the wifi hotspot config file to hostapd.conf
 cat hostapd.config > /etc/hostapd/hostapd.conf
