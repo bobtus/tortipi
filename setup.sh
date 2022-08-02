@@ -23,10 +23,10 @@ fi
 
 echo -e "${GREEN}Updating...${NC}"
     apt update -y
-fi
+
 echo -e "${GREEN}Upgarding...${NC}"
     apt upgrade -y
-fi
+
 
 echo "Installing various packages..."
 # Package information
