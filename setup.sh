@@ -58,6 +58,9 @@ ifconfig wlan0 up
 # copying the wifi hotspot config file to hostapd.conf
 cat hostapd.config > /etc/hostapd/hostapd.conf
 sed 'DAEMON_CONF="/etc/hostapd/hostapd.conf"' > /etc/default/hostapd
+systemctl unmask hostapd
+systemctl enable hostapd
+systemctl start hostapd
 
 # Allow the Rpi to behave as NAT forwarder
 echo 'net.ipv4.ip_forward=1' >> /etc/sysctl.conf
