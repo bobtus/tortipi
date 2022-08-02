@@ -46,10 +46,10 @@ Let `TorTiPi` do it.
 ---
 TorTiPi setups everything for you. But How ??  
 ```bash
-git clone https://github.com/r0hi7/tortipi.git
-cd tortipi
-chmod +x setup.sh
-./setup.sh
+sudo git clone https://github.com/bobtus/tortipi.git
+&& cd tortipi
+&& chmod +x setup.sh
+&& ./setup.sh
 ```
 Only 4 simple commands. :smile:  
 At the end of the installation, a Access point named as **TorTiPi** will be up and its default password would be **changeme**.
