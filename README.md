@@ -19,6 +19,12 @@ At this point **TTP** provides extremly simple but complete setup to create Tor 
 I will not mention that why should one use [Tor](https://en.wikipedia.org/wiki/Tor_(anonymity_network)) if you are curious to know [this blog post](https://www.eff.org/deeplinks/2014/06/why-you-should-use-tor) is a good read.  
 **If you really want to get your hands dirty with anonymity**, then lets gets started.
 
+**Raspberry Pi OS download:**
+https://downloads.raspberrypi.org/
+
+[Raspios Buster Armhf Lite](https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2022-04-07/2022-04-04-raspios-buster-armhf-lite.img.xz)
+
+
 Changing the Configurations.
 ---
 The [hostapd.config](/hostapd.config) file in this repo needs to be changed before the running setup script.
