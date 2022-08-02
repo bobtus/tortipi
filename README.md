@@ -14,23 +14,10 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                               
        "\       "      \X/      "      /" 
 
 ```
-TorTiPi is a tool to setup the **Tor based wifi hotspot**  on Raspberry Pi Model 3. This tool can also work with the other models on Raspberry but would require exteranl wifi  adapter plugged into RP, which would be helpful to create access point.  
+TorTiPi is a tool to setup the **Tor based wifi hotspot**  on Raspberry Pi (Model 3). This tool can also work with the other models on Raspberry but would require exteranl wifi  adapter plugged into RP, which would be helpful to create access point.  
 At this point **TTP** provides extremly simple but complete setup to create Tor network access point.  
 I will not mention that why should one use [Tor](https://en.wikipedia.org/wiki/Tor_(anonymity_network)) if you are curious to know [this blog post](https://www.eff.org/deeplinks/2014/06/why-you-should-use-tor) is a good read.  
-**If you really want to get your hands dirty with anonymity**, then lets gets started.    
-
-Let `TorTiPi` do it.
----
-TorTiPi setups everything for you. But How ??  
-```bash
-git clone https://github.com/r0hi7/tortipi.git
-cd tortipi
-chmod +x setup.sh
-./setup.sh
-```
-Only 4 simple commands. :smile:  
-At the end of the installation, a Access point named as **TorTiPi** will be up and its default password would be **changeme**.
-If you want to change deafult password, TorTiPi simplifies that too for you.  
+**If you really want to get your hands dirty with anonymity**, then lets gets started.
 
 Changing the Configurations.
 ---
@@ -53,3 +40,18 @@ If you notice the content are very simple key value pair. For our concern we nee
 Once the changes have been made, save the file and run `./setup.sh`.  
 If you have already ran setup script. Donot rerun the script after changing. Rather modify the file `/etc/hostapd/hostapd.conf`. This file also have same parameter as to the one in [hostapd.config](/hostapd.config). After making the changes restart the hostapd service.  
 `service hostapd restart`
+
+
+Let `TorTiPi` do it.
+---
+TorTiPi setups everything for you. But How ??  
+```bash
+git clone https://github.com/r0hi7/tortipi.git
+cd tortipi
+chmod +x setup.sh
+./setup.sh
+```
+Only 4 simple commands. :smile:  
+At the end of the installation, a Access point named as **TorTiPi** will be up and its default password would be **changeme**.
+If you want to change deafult password, TorTiPi simplifies that too for you.  
+
