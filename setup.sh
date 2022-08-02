@@ -22,14 +22,10 @@ if [ `whoami` != "root" ]; then
 fi
 
 echo -e "${GREEN}Updating...${NC}"
-read -p "Press [y/n] to continue..." ans
-if [ $ans == "y" ];then
-    apt-get update -y
+    apt update -y
 fi
 echo -e "${GREEN}Upgarding...${NC}"
-read -p "Press [y/n] to continue..." ans
-if [ $ans == "y" ];then
-    apt-get upgrade -y
+    apt upgrade -y
 fi
 
 echo "Installing various packages..."
@@ -38,7 +34,7 @@ echo "Installing various packages..."
 # isc-dhcp-server: This is required to allow the raspberry pi to give local ip to connecting devices.
 # iptables-persistent: Saving the state of Iptables for restoring during bootup
 # hostapd: sets up the wifi hotspot.
-apt-get install -y tor hostapd isc-dhcp-server iptables-persistent
+apt install -y tor hostapd isc-dhcp-server iptables-persistent
 
 
 #Configuration change in DHCP server, make it authoritative so as to make it give IP address to connecting devices.
