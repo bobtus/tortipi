@@ -52,7 +52,8 @@ Let `TorTiPi` do it.
 ---
 TorTiPi setups everything for you. But How ??  
 ```bash
-sudo apt install git -y && git clone https://github.com/bobtus/tortipi.git && cd tortipi && sudo chmod +x setup.sh && sudo ./setup.sh
+sudo apt install git -y && git clone https://github.com/bobtus/tortipi.git && cd tortipi && sudo chmod +x setup.sh
+sudo ./setup.sh
 ```
 
 At the end of the installation, a Access point named as **TorTiPi** will be up and its default password would be **changeme**.
